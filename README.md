@@ -17,6 +17,7 @@ pip install robotframework-pabot
 **Run command :**
 <br>
 pabot --processes 4 -d results -o Output.xml Tests
+<br>
 **Multithread with allure report generation**
 <br>
 pabot --processes 4 -d results -o Output.xml --listener allure_robotframework Tests

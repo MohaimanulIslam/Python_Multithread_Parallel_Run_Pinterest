@@ -11,6 +11,7 @@ $ robot --listener allure_robotframework ./my_robot_test
 A parallel executor for Robot Framework tests. With Pabot you can split one execution into multiple and save test execution time.
 <br>
 **Installation**
+<br>
 pip install robotframework-pabot
 <br>
 **Run command :**

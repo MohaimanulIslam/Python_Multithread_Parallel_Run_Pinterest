@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.8.8 on win32)" generated="20220417 16:11:49.415" rpa="false" schemaversion="3">
+<suite id="s1" name="Tests" source="C:\Users\88016\PycharmProjects\PythonRobot\Tests">
+<suite id="s1-s1" name="LoginPageTests3" source="C:\Users\88016\PycharmProjects\PythonRobot\Tests\LoginPageTests3.robot">
+<test id="s1-s1-t1" name="Login" line="6">
+<kw name="open my browser" library="loginPage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220417 16:11:49.945" level="INFO">Opening browser 'chrome' to base url 'https://www.pinterest.com/'.</msg>
+<status status="PASS" starttime="20220417 16:11:49.944" endtime="20220417 16:12:17.296"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220417 16:12:17.297" endtime="20220417 16:12:17.810"/>
+</kw>
+<status status="PASS" starttime="20220417 16:11:49.942" endtime="20220417 16:12:17.811"/>
+</kw>
+<kw name="Click SignIn" library="loginPage">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220417 16:12:19.831" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220417 16:12:17.813" endtime="20220417 16:12:19.832"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOGIN_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220417 16:12:19.836" level="INFO">Clicking element '//div[@class='tBJ dyH iFc sAJ xnr tg7 mWe']'.</msg>
+<status status="PASS" starttime="20220417 16:12:19.833" endtime="20220417 16:12:29.296"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220417 16:12:31.382" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220417 16:12:29.298" endtime="20220417 16:12:31.384"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SET_EMAIL}</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220417 16:12:31.391" level="INFO">Typing text 'miraz.qups@gmail.com' into text field '//*[@id='email']'.</msg>
+<status status="PASS" starttime="20220417 16:12:31.388" endtime="20220417 16:12:35.002"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SET_PASS}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220417 16:12:35.004" level="INFO">Typing text 'TestCase0101' into text field '//*[@id='password']'.</msg>
+<status status="PASS" starttime="20220417 16:12:35.003" endtime="20220417 16:12:35.543"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CLICK_SIGNIN_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220417 16:12:35.549" level="INFO">Clicking element '//button[@class='red SignupButton active']'.</msg>
+<status status="PASS" starttime="20220417 16:12:35.544" endtime="20220417 16:12:35.876"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220417 16:12:35.877" endtime="20220417 16:12:40.916"/>
+</kw>
+<status status="PASS" starttime="20220417 16:12:17.812" endtime="20220417 16:12:40.917"/>
+</kw>
+<status status="PASS" starttime="20220417 16:11:49.939" endtime="20220417 16:12:40.917"/>
+</test>
+<status status="PASS" starttime="20220417 16:11:49.480" endtime="20220417 16:12:40.918"/>
+</suite>
+<status status="PASS" starttime="20220417 16:11:49.432" endtime="20220417 16:12:40.920"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="LoginPageTests3">Tests.LoginPageTests3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

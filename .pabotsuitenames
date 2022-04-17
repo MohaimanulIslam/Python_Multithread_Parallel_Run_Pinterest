@@ -1,0 +1,11 @@
+datasources:340f8c97b11265c384f43e06e258fe10780ea782
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:b289fac126d580a689652cfa0cd8a7d0c889b682
+--suite Tests.LoginPageTests
+--suite Tests.LoginPageTests1
+--suite Tests.LoginPageTests2
+--suite Tests.LoginPageTests3
+--suite Tests.LoginPageTests4
+--suite Tests.LoginPageTests5
+--suite Tests.LoginPageTests6

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.8.8 on win32)" generated="20220417 16:18:44.986" rpa="false" schemaversion="3">
+<suite id="s1" name="LoginPageTests1" source="C:\Users\88016\PycharmProjects\PythonRobot\Tests\LoginPageTests1.robot">
+<test id="s1-t1" name="Login" line="6">
+<kw name="open my browser" library="loginPage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220417 16:18:45.335" level="INFO">Opening browser 'chrome' to base url 'https://www.pinterest.com/'.</msg>
+<status status="PASS" starttime="20220417 16:18:45.334" endtime="20220417 16:18:52.168"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220417 16:18:52.172" endtime="20220417 16:18:52.396"/>
+</kw>
+<status status="PASS" starttime="20220417 16:18:45.333" endtime="20220417 16:18:52.398"/>
+</kw>
+<kw name="Click SignIn" library="loginPage">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220417 16:18:54.405" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220417 16:18:52.401" endtime="20220417 16:18:54.406"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOGIN_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220417 16:18:54.411" level="INFO">Clicking element '//div[@class='tBJ dyH iFc sAJ xnr tg7 mWe']'.</msg>
+<status status="PASS" starttime="20220417 16:18:54.409" endtime="20220417 16:18:54.643"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220417 16:18:56.657" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220417 16:18:54.646" endtime="20220417 16:18:56.657"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SET_EMAIL}</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220417 16:18:56.660" level="INFO">Typing text 'miraz.qups@gmail.com' into text field '//*[@id='email']'.</msg>
+<status status="PASS" starttime="20220417 16:18:56.659" endtime="20220417 16:18:56.954"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SET_PASS}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220417 16:18:56.959" level="INFO">Typing text 'TestCase0101' into text field '//*[@id='password']'.</msg>
+<status status="PASS" starttime="20220417 16:18:56.958" endtime="20220417 16:18:57.172"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CLICK_SIGNIN_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220417 16:18:57.176" level="INFO">Clicking element '//button[@class='red SignupButton active']'.</msg>
+<status status="PASS" starttime="20220417 16:18:57.175" endtime="20220417 16:18:57.266"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220417 16:18:57.270" endtime="20220417 16:19:00.035"/>
+</kw>
+<status status="PASS" starttime="20220417 16:18:52.400" endtime="20220417 16:19:00.036"/>
+</kw>
+<status status="PASS" starttime="20220417 16:18:45.331" endtime="20220417 16:19:00.037"/>
+</test>
+<status status="PASS" starttime="20220417 16:18:45.081" endtime="20220417 16:19:00.046"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="LoginPageTests1">LoginPageTests1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

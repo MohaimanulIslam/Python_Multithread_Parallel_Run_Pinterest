@@ -1,6 +1,7 @@
 # Python_Multithread_Parallel_Run_Pinterest
 ## Allure Robot Framework
 **Installation and Usage**
+<br>
 $ pip install allure-robotframework
 <br>
 $ robot --listener allure_robotframework ./my_robot_test
